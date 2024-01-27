@@ -1,4 +1,4 @@
-package Excepciones;
+package com.ProyectoFinal.APIFrond.Excepciones;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

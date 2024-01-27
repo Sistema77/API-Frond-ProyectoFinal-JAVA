@@ -1,4 +1,4 @@
-package Controladores;
+package com.ProyectoFinal.APIFrond.Controladores;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Repositorios.UsuarioRepositorio;
-import Modelo.UsuarioDAO;
+import com.ProyectoFinal.APIFrond.Repositorios.UsuarioRepositorio;
+import com.ProyectoFinal.APIFrond.Modelo.UsuarioDAO;
 
 @RestController
 @RequestMapping("/api")
@@ -24,7 +24,7 @@ public class UsuarioControlador {
 		return this.repositorio.findAll();
 	}
 	
-	@PostMapping
+	@PostMapping("/nuevousuario")
 	public UsuarioDAO crearUsuario(@RequestBody UsuarioDAO nuevoUsuario) {
 	    return repositorio.save(nuevoUsuario);
 	}

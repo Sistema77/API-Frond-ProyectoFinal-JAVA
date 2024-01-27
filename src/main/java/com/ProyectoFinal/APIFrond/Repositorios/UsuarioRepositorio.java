@@ -1,9 +1,9 @@
-package Repositorios;
+package com.ProyectoFinal.APIFrond.Repositorios;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import Modelo.UsuarioDAO;
+import com.ProyectoFinal.APIFrond.Modelo.UsuarioDAO;
 
 public interface UsuarioRepositorio extends JpaRepository<UsuarioDAO, Long> {
 	/**
@@ -11,12 +11,12 @@ public interface UsuarioRepositorio extends JpaRepository<UsuarioDAO, Long> {
 	 * @param dni
 	 * @return Usuario o null
 	 */
-	Optional<UsuarioDAO> findByDniUsuario(String dni);
+	Optional<UsuarioDAO> findByDni(String dni);
 	
 	/**
 	 * Método que busca un usuario por Email en la base de datos y lo devuelve
 	 * @param email
 	 * @return Usuario o null
 	 */
-	Optional<UsuarioDAO> findByEmailUsuario(String email);
+	Optional<UsuarioDAO> findByEmail(String email);
 }

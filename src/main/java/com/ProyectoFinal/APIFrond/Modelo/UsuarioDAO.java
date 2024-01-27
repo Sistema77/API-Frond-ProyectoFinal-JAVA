@@ -1,4 +1,4 @@
-package Modelo;
+package com.ProyectoFinal.APIFrond.Modelo;
 import java.util.List;
 
 import jakarta.persistence.Column;
