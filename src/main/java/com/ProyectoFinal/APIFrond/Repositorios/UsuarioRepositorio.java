@@ -19,4 +19,17 @@ public interface UsuarioRepositorio extends JpaRepository<UsuarioDAO, Long> {
 	 * @return Usuario o null
 	 */
 	Optional<UsuarioDAO> findByEmail(String email);
+	
+	
+	Optional<UsuarioDAO> findByName(String name);
+	
+	Optional<UsuarioDAO> findByLastName(String lastName);
+	Optional<UsuarioDAO> findByPassword(String password);
+	Optional<UsuarioDAO> findByTlf(String tlf);
+	Optional<UsuarioDAO> findByFoto(String foto);
+	Optional<UsuarioDAO> findByTipoUsuario(String tipoUsuario);
+	
+	
+	
+	
 }
